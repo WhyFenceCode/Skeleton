@@ -1,6 +1,6 @@
 [package]
 name = "skeleton"
-version = "1.5.3"
+version = "1.6.1"
 description = "skeleton"
 authors = ["WhyFencePost"]
 edition = "2021"
