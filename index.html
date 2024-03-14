@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="src/styles.css">
+      <link rel="stylesheet" href="src/progressCircle.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class="exitbar" data-tauri-drag-region>
+            <div id="maximize" class="button maximize"></div>
+            <div id="hide" class="button hide"></div>
+            <div id="close" class="button close"></div>
+          </div>
+          <div class="menu">
+            <div class="menu-spacer"></div>
+            <div class="menu-centerer"><div class="menu-icon menu-icon-selected" id="home-button"><div class="menu-icon-img" id="home"></div></div></div>
+            <div class="menu-centerer"><div class="menu-icon" id="log-button"><div class="menu-icon-img" id="log"></div></div></div>
+          </div>
+          <div class="main">
+            <div class="home-area main-area-selected main-area">
+              <h1>DASHBOARD</h1>
+              <div class="progress-renderer">
+                <div class ="circle-progress-container-cpu">
+                  <div class="circular-progress-container-iner-cpu">
+                    <div class="circular-progress-cpu" data-inner-circle-color="#181a1e" data-percentage="100" data-progress-color="whitesmoke" data-bg-color="#0e0f11">
+                      <div class="inner-circle-cpu"></div>
+                      <p class="percentage-cpu">0%</p>
+                    </div>
+                  </div>
+                  <h2>CPU LOAD</h2>
+                </div>
+                <div class ="circle-progress-container-temp">
+                  <div class="circular-progress-container-iner-temp">
+                    <div class="circular-progress-temp" data-inner-circle-color="#181a1e" data-percentage="100" data-progress-color="whitesmoke" data-bg-color="#0e0f11">
+                      <div class="inner-circle-temp"></div>
+                      <p class="percentage-temp">0c</p>
+                    </div>
+                  </div>
+                  <h2>DEVICE TEMP</h2>
+                </div>
+                <div class ="circle-progress-container-net">
+                  <div class="circular-progress-container-iner-net">
+                    <div class="circular-progress-net" data-inner-circle-color="#181a1e" data-percentage="100" data-progress-color="whitesmoke" data-bg-color="#0e0f11">
+                      <div class="inner-circle-net"></div>
+                      <p class="percentage-net">0KB/S</p>
+                    </div>
+                  </div>
+                  <h2>NETWORK</h2>
+                </div>
+              </div>
+            </div>
+            <div class="log-area main-area">
+              <h1>LATEST.LOG RENDERER</h1>
+              <div class="log-renderer-container">
+                <ol type="1" class="log-renderer-list">
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="lowerbar"><p id="version">SKELETON v1 | 1.2.6</p></div>
+        </div>
+        <div class="splashscreen">
+          <div class="splashscreen-content">
+            <h1>SKELETON</h1>
+            <h2>BY: WHYFENCEPOST</h2>
+          </div>
+        </div>
+        <script src="src/setup.js" type="module"></script>
+        <script src="src/progressCircle.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+[package]
+name = "skeleton"
+version = "1.5.3"
+description = "skeleton"
+authors = ["WhyFencePost"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
+
+[dependencies]
+tauri = { version = "1", features = [ "fs-read-dir", "fs-read-file", "path-all", "window-all", "shell-open"] }
+serde = { version = "1", features = ["derive"] }
+window-shadows = "0.2.2"
+sysinfo = "0.30.7"
+serde_json = "1"
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]

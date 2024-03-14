@@ -1,0 +1,89 @@
+.circular-progress-cpu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --progress-bar-width: 200px;
+    --progress-bar-height: 200px;
+    --font-size: 2rem;
+}
+
+.circular-progress-cpu {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle-cpu {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 30px);
+    height: calc(var(--progress-bar-height) - 30px);
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.percentage-cpu {
+    position: relative;
+    font-size: var(--font-size);
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.circular-progress-temp {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circular-progress-temp {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle-temp {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 30px);
+    height: calc(var(--progress-bar-height) - 30px);
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.percentage-temp {
+    position: relative;
+    font-size: var(--font-size);
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.circular-progress-net {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circular-progress-net {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle-net {
+    position: absolute;
+    width: calc(var(--progress-bar-width) - 30px);
+    height: calc(var(--progress-bar-height) - 30px);
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.percentage-net {
+    position: relative;
+    font-size: var(--font-size);
+    color: rgb(0, 0, 0, 0.8);
+}

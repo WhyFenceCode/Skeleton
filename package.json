@@ -1,0 +1,21 @@
+{
+  "name": "skeleton",
+  "private": true,
+  "version": "1.5.3",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "load": "tauri dev"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1",
+    "vite": "^5.0.0",
+    "typescript": "^5.0.2"
+  }
+}
