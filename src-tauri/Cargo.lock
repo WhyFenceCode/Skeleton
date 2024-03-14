@@ -2483,7 +2483,7 @@ checksum = "38b58827f4464d87d377d175e90bf58eb00fd8716ff0a62f80356b5e61555d0d"
 
 [[package]]
 name = "skeleton"
-version = "1.5.3"
+version = "1.6.1"
 dependencies = [
  "serde",
  "serde_json",

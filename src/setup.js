@@ -11,6 +11,8 @@ let homeButton = document.getElementById("home-button");
 let homeArea = document.querySelector(".home-area");
 let logButton = document.getElementById("log-button");
 let logArea = document.querySelector(".log-area");
+let blockPropButton = document.getElementById("blockprop-button");
+let blockPropArea = document.querySelector(".blockprop-area");
 
 let areas = document.querySelectorAll(".main-area");
 let areabuttons = document.querySelectorAll(".menu-icon");
@@ -89,6 +91,18 @@ function mapAreaToButton(area, button){
     logButton.classList.add("menu-icon-selected");
   });
 
+  blockPropButton.addEventListener("click", (ev) => {
+    areas.forEach(element => {
+      element.classList.remove("main-area-selected");
+      element.classList.add("main-area-unselected");
+    });
+    areabuttons.forEach(element => {
+      element.classList.remove("menu-icon-selected");
+    });
+    blockPropArea.classList.add("main-area-selected");
+    blockPropArea.classList.remove("main-area-unselected");
+    blockPropButton.classList.add("menu-icon-selected");
+  });
 }
 
 
