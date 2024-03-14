@@ -19,10 +19,8 @@ async function maxWin(){
   const maximized = await appWindow.isMaximized();
   if (maximized) {
     await appWindow.unmaximize();
-    container.style.borderRadius = "5px";
   }else{
     await appWindow.maximize();
-    container.style.borderRadius = "0px";
   }
 }
 
